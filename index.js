@@ -7,14 +7,14 @@
   let score = 0
 
 function randomTime(min, max){
-  return Math.round (Math.roundMath.random() * (max -min) + min);
+  return Math.round(Math.random() * (max - min) + min);
 }
 
-function randHole(holes){
+function randomHole(holes){
   const idx = Math.floor(Math.random() * holes.length);
   const hole = holes[idx];
   if (hole === lastHole){
-    console.log('Ah nah thats the same one bud');
+    console.log('same');
     return randomHole(holes);
   }
   lastHole = hole;
@@ -25,11 +25,9 @@ function peep(){
   const time = randomTime (200, 1000);
   const hole = randomHole(holes);
   hole.classList.add('up');
-  setTimeout(()=>
-  {
+  setTimeout(() => {
     hole.classList.remove('up');
-    if(!timeUp)peep();
-    peep();
+    if (!timeUp) peep();
   }, time);
 }
 
@@ -44,7 +42,7 @@ function startGame(){
 function bonk(e){
   if(!e.isTrusted)return;
   score++;
-  this.classList.remove('up');
+  this.parentNode.classList.remove('up');
   scoreBoard.textContent = score;
 }
 
