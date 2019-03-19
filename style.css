@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   background: skyblue;
+  cursor: url(gauntlet.svg), auto;
 }
 
 *, *:before, *:after {
@@ -14,7 +15,7 @@ body {
   font-family: 'Amatic SC', cursive;
 }
 
-h1 {
+h1, button {
   text-align: center;
   font-size: 10rem;
   line-height: 1;
@@ -68,6 +69,3 @@ h1 {
   top: 0;
 }
 
-.custom {
-  cursor: url(gauntlet.svg), auto;
-}
