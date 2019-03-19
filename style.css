@@ -54,8 +54,8 @@ h1 {
   bottom: -30px;
 }
 
-.mole {
-  background: url('mole.svg') bottom center no-repeat;
+.thanos{
+  background: url('thanos.svg') bottom center no-repeat;
   background-size: 60%;
   position: absolute;
   top: 100%;
@@ -64,6 +64,10 @@ h1 {
   transition:all 0.4s;
 }
 
-.hole.up .mole {
+.hole.up .thanos {
   top: 0;
+}
+
+.custom {
+  cursor: url(gauntlet.svg), auto;
 }

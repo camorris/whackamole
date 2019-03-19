@@ -1,7 +1,7 @@
 
   const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
-  const moles = document.querySelectorAll('.mole');
+  const thanos = document.querySelectorAll('.thanos');
   let lastHole;
   let timeUp;
   let score = 0
@@ -46,4 +46,4 @@ function bonk(e){
   scoreBoard.textContent = score;
 }
 
-moles.forEach(mole => mole.addEventListener('click', bonk));
+thanos.forEach(thanos => thanos.addEventListener('click', bonk));
