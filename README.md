@@ -4,7 +4,7 @@ You got the infinity gauntlet from thanos while he was sleeping in a hole. Take 
 
 ## Getting Started
 
-Download to play a game of whack a mole
+Download to play a game of whack a mole. 
 
 
 ## Built With
